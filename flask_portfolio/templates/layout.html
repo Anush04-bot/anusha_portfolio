@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Description" content="Anusha Chandraraj personal website. Bio and contact info.">
+        <title>Anusha Chandraraj</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/jpg" href="/static/anu.png"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap" rel="stylesheet">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66422434-5"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-66422434-5');
+        </script>
+
+        
+
+        <link rel="stylesheet" href="/static/fancy.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+            <!-- Navbar content -->
+            <a class="navbar-brand" href="#">Anusha Chandraraj</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav " aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience" >Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            {% block header_contact %}
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div class="alert alert-{{ category }}">
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+            {% endblock %}
+            <div class="header rowpad" id="about">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="img-header text-center">
+                            <a href="home"><img class="img-fluid" src="/static/anusha_pic.jpg" width="226" height="256"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="content">
+                            <h1 class="Heebo-font-Thin">Anusha Chandraraj</h1>
+                            <h4 class="Heebo-font-Thin">Data Warehouse/Data Analyst Consultant based in San Jose</h4>
+                            <div class="icons">
+                                <a alt="Github" title="Github" href="https://github.com/Anush04-bot" target="_blank"><i class="fab fa-github fa-2x icon-module"></i></a>
+                                <a alt="Linkedin" title="Linkedin" href="https://www.linkedin.com/in/anusha-sudhir-72a78b33/" target="_blank"><i class="fab fa-linkedin-in fa-2x icon-module"></i></a>
+                            </div>
+                            <div class="subheading">
+                                <a href="#contact">CONTACT ME </a>  · <a href="/static/ANUSHA_Resume_2020.pdf" target="_blank">VIEW RESUME</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="about rowpad">
+                <div class="row">
+                    <div class="col-sm-4">
+                      <h4 class="Heebo-font-Thin left-row-text" style="text-align: center;">ABOUT ME</h4>
+                    </div>
+                    <div class="col-sm-8">
+                        <p id="longParagraph">Well hello there! My name is Anusha Chandraraj and I'm a Dedicated and highly ambitious B.Tech graduate offering 8 years of insightful experience in Python, PL/SQL , SQL development and Unix Shell Scripting. Worked on all phases of data warehouse development lifecycle from gathering requirements to testing, implementation and support. 
+                            <br>
+                            <br>
+                            I enjoy learning new technologies and working through the challenges I come across. I enjoy mentoring others and empowering people around me to become experts.
+                            <br>
+                            <br>
+                            In my spare time I love to code and learn new technologies.
+                    </div>
+                </div>
+            </section>
+            <div class="solid-line" id="skills"></div>
+            <section class="skills rowpad">
+                <div class="row">
+                    <div class="col-sm-4">
+                      <h4 class="left-row-text" style="text-align: center;">SKILLS</h4>
+                    </div>
+                    <div class="col-sm">
+                        <ul>
+                            <ol class="bold">LANGUAGES</ol>
+                            <ol>Pl/SQL</ol>
+                            <ol>Python</ol>
+                            <ol>SQL</ol>
+                            <ol>Bash</ol>
+                            <ol>NumPy</ol>
+                            <ol>Pandas</ol>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <ul>
+                            <ol class="bold">FRAMEWORKS</ol>
+                            <ol>Flask</ol>
+                            <ol>SQL Alchemy</ol>
+                            <ol>AWS</ol>
+                            <ol>Jenkins</ol>
+                            <ol>Git & Github</ol>
+                            <ol>Confluence</ol>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <ul>
+                            <ol class="bold">Visualization</ol>
+                            <ol>Tableau</ol>
+                            <ol>Spotfire</ol>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="solid-line" id="experience"></div>
+            <section class="experience rowpad">
+                <div class="row">
+                    <div class="col-sm-4">
+                      <h4 class="Heebo-font-Thin left-row-text " style="text-align: center;">EXPERIENCE</h4>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="inner-div">
+                            <a class="inner-link" href="https://Infosys.com" target="_blank">Infosys Ltd</a>
+                            <p>Data Warehousing Engineer/Technical Associate, Dec 2011 - Feb 2018</p>
+                        </div>
+                        <div class="inner-div">
+                            <a class="inner-link" href="https://oracle.com" target="_blank">Oracle Financial Services</a>
+                            <p>Data Analyst (Contractor), Dec 2010 - Dec 2011</p>
+                        </div>
+                        <div class="inner-div" id="projects">
+                            <a class="inner-link" href="https://www.blazedream.com" target="_blank">Blaze Dream Technology</a>
+                            <p>Technical Data analyst, Aug 2009 - Aug 2010</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="solid-line" id="projects"></div>
+            <section class="projects rowpad">
+                <div class="row">
+                    <div class="col-sm-4">
+                      <h4 class="Heebo-font-Thin left-row-text" style="text-align: center;">SELF PROJECTS</h4>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="inner-div">
+                            <a class="inner-link text-nowrap" href="http://AnushaChandraraj.com" target="_blank">Anusha Chandraraj</a>
+                            <p>Designed and developed a minimal single-page app portfolio.</p>
+                            <p>🔗 <a class="" href="http://AnushaChandraraj.com" target="_blank">http://AnushaChandraraj.com</a></p>
+                            <a style="margin-bottom: 20px;" class="btn btn-light" href="https://github.com/wjone005/portfolio" target="_blank" role="button"><i class="fab fa-github"></i> Github Source Code</a>
+                            <div>
+                                <span class="usedTechnology">Flask</span>
+                                <span class="usedTechnology">Python</span>
+                                <span class="usedTechnology">Bootstrap</span>
+                                <span class="usedTechnology">Javascript</span>
+                                <span class="usedTechnology">Jinja</span>
+                                <span class="usedTechnology">HTML5</span>
+                                <span class="usedTechnology">SendGrid API</span>
+                            </div>
+                        </div>
+                        <div class="inner-div">
+                            <a class="inner-link" href="https://github.com/Anush04-bot/OptimisationAlgorithm" target="_blank">OptimisationAlgorithm</a>
+                            <p>Optimisation Algorithm written in Python for Ant colony .</p>
+                            <p>🔗 <a class="" href="https://github.com/Anush04-bot/OptimisationAlgorithm" target="_blank">https://github.com/Anush04-bot/OptimisationAlgorithm</a></p>
+                            <a style="margin-bottom: 20px;" class="btn btn-light" href="https://github.com/Anush04-bot/OptimisationAlgorithm" target="_blank" role="button"><i class="fab fa-github"></i> Github Source Code</a>
+                            <div>
+                                <span class="usedTechnology">Python 3.0</span>
+                                <span class="usedTechnology">NumPy</span>
+                                <span class="usedTechnology">Pandas</span>
+                                <span class="usedTechnology">matplotlib</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>         
+            <div class="solid-line" id="contact"></div>
+            <section>
+                <div class="contact" >
+                    {% block contact %}
+                        <h4 class="left-row-text" style="text-align: center;">CONTACT ME</h4>
+
+                        <form class="justify-content-center" novalidate  action="{{ url_for('home') }}" method="POST" name="contact" role="form"> 
+                            {{ form.hidden_tag() }}
+
+                            <div class="form-group">
+                            {{ form.name.label(class="form-control-label") }}
+
+                                {% if form.name.errors %}
+                                    {{ form.name(class="form-control form-control-lg is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.name.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {{ form.name(class="form-control form-control-lg" ) }} 
+                                {% endif %}
+                            </div>
+                            
+                            <div class="form-group">
+                                {{ form.email.label }}
+                                {% if form.email.errors %}
+                                    {{ form.email(class="form-control form-control-lg is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.email.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {{ form.email(class="form-control form-control-lg" ) }} 
+                                {% endif %}                              
+                            </div>
+                    
+                            <div class="form-group">
+                                {{ form.subject.label }}
+                                {% if form.subject.errors %}
+                                    {{ form.subject(class="form-control form-control-lg is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.subject.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {{ form.subject(class="form-control form-control-lg" ) }} 
+                                {% endif %}    
+                            </div>
+
+                            <div class="form-group">
+                                {{ form.message.label }}
+                                {% if form.message.errors %}
+                                    {{ form.message(class="form-control form-control-lg is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.message.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    {{ form.message(class="form-control form-control-lg" ) }} 
+                                {% endif %}
+                            </div>
+
+                            
+                            <div class="form-group">
+                                {{ form.recaptcha }}
+                            </div>
+                            <div class="text-center">
+                                {{ form.submit(class="btn btn-primary") }}
+                            </div>
+                            
+
+                            {% with messages = get_flashed_messages(with_categories=true) %}
+                                {% if messages %}
+                                    {% for category, message in messages %}
+                                        <div class="alert alert-{{ category }}">
+                                            {{ message }}
+                                        </div>
+                                    {% endfor %}
+                                {% endif %}
+                            {% endwith %}
+                        </form>
+                        
+                    
+                    {% endblock %}
+                </div>
+            </section>
+        </div>
+        
+        
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+    <script src="https://kit.fontawesome.com/abd487df08.js" crossorigin="anonymous"></script>
+        <script>
+            if ( window.history.replaceState ) {
+                window.history.replaceState( null, null, window.location.href );
+            }
+            $('.navbar-nav>li>a').on('click', function(){
+                $('.navbar-collapse').collapse('hide');
+            });
+
+        </script>
+    </body>
+</html>
